@@ -171,4 +171,5 @@ $lang["edit"] = "Editar";
 $lang["delete"] = "Borrar";
 $lang["settings"] = "Configuración";
 $lang["trackcolor"] = "Color del track";
+$lang["sv"] = "Street View";
 ?>

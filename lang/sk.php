@@ -171,4 +171,5 @@ $lang["edit"] = "Upraviť";
 $lang["delete"] = "Zmazať";
 $lang["settings"] = "Nastavenia";
 $lang["trackcolor"] = "Farba cesty";
+$lang["sv"] = "Street View";
 ?>

@@ -292,6 +292,7 @@ export default class MapViewModel extends ViewModel {
     if (isEditable) {
       editLink = `<a id="editposition" class="menu-link" data-bind="onUserAdd">${$._('editposition')}</a>`;
     }
+    let latLonS = pos.latitude.toString() + "," + pos.longitude.toString();
     let stats = '';
     if (!this.state.showLatest) {
       stats =
@@ -318,8 +319,7 @@ export default class MapViewModel extends ViewModel {
         ${(pos.accuracy !== null) ? `<img class="icon" alt="${$._('accuracy')}" title="${$._('accuracy')}" src="images/accuracy_dark.svg">${$.getLocaleAccuracy(pos.accuracy, true)}${provider}<br>` : ''}
         ${(pos.bearing !== null) ? `<img class="icon" alt="${$._('bearing')}" title="${$._('bearing')}" src="images/bearing.svg" style="transform: rotate(${pos.bearing}deg) scale(1.2);">${pos.bearing}°<br>` : ''}
         <img class="icon" alt="${$._('position')}" title="${$._('position')}" src="images/position.svg">${$.getLocaleCoordinates(pos)}<br>
-        </div>${stats}</div>
-        <div id="pfooter"><div>${$._('pointof', id + 1, count)}</div><div>${editLink}</div></div>`;
+        </div>${stats}</div><div id="pfooter"><div>${$._('pointof', id + 1, count)}</div><div>${editLink}</div>` + '<div><a class="menu-link" href="https://www.google.com/maps?q=' + latLonS + '&amp;layer=c&amp;cbll=' + latLonS + '\"' + 'target="_blank | sametab">' + `${$._('sv')}` + '</a></div>';
     const node = document.createElement('div');
     node.setAttribute('id', 'popup');
     node.innerHTML = html;

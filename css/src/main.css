@@ -281,20 +281,26 @@ label[for=user] {
 }
 
 #pfooter {
-  font-size: 0.6rem;
-  padding-top: 20px;
-  color: #f0f8ff;
+  font-size: 0.7rem;
+  color: #080808;
+  margin-top: 5px;
 }
 
-#pfooter div:first-child {
+#pfooter div:nth-child(1) {
+  width: 38%;
+  float: left;
+  padding-top: 5px;
+}
+
+#pfooter div:nth-child(2) {
   width: 40%;
   float: left;
+  padding-top: 4px;
 }
 
-#pfooter div:last-child {
-  width: 40%;
+#pfooter div:nth-child(3) {
   float: right;
-  text-align: right;
+  padding-top: 4px;
 }
 
 #bottom {

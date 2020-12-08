@@ -171,4 +171,5 @@ $lang["edit"] = "Изменить";
 $lang["delete"] = "Удалить";
 $lang["settings"] = "Настройки";
 $lang["trackcolor"] = "Тепловая карта";
+$lang["sv"] = "Street View";
 ?>
